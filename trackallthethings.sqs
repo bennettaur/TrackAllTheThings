@@ -240,6 +240,12 @@
             <name><![CDATA[id]]></name>
             <type><![CDATA[INTEGER]]></type>
             <primaryKey>1</primaryKey>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <uid><![CDATA[63E8FB8E-921C-4035-B347-8D90073A2352]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[ticket_id]]></name>
+            <type><![CDATA[INTEGER]]></type>
             <referencesField>id</referencesField>
             <referencesTable>Tickets</referencesTable>
             <referencesField><![CDATA[id]]></referencesField>
@@ -248,12 +254,6 @@
             <destinationCardinality>0</destinationCardinality>
             <referencesFieldUID><![CDATA[671B0C80-9B9C-4FBB-A856-852D8B549D79]]></referencesFieldUID>
             <referencesTableUID><![CDATA[CA124919-9E6F-4ABD-AB85-E2DB2B0050D1]]></referencesTableUID>
-            <forcedUnique><![CDATA[1]]></forcedUnique>
-            <uid><![CDATA[63E8FB8E-921C-4035-B347-8D90073A2352]]></uid>
-        </SQLField>
-        <SQLField>
-            <name><![CDATA[ticket_id]]></name>
-            <type><![CDATA[INTEGER]]></type>
             <uid><![CDATA[E86E4F04-A799-444A-A035-A753244094F1]]></uid>
         </SQLField>
         <SQLField>
@@ -855,7 +855,7 @@ mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
         <windowHeight><![CDATA[784.000000]]></windowHeight>
         <windowLocationX><![CDATA[38.000000]]></windowLocationX>
         <windowLocationY><![CDATA[70.000000]]></windowLocationY>
-        <windowScrollOrigin><![CDATA[{0, 0}]]></windowScrollOrigin>
+        <windowScrollOrigin><![CDATA[{332, 2}]]></windowScrollOrigin>
         <windowWidth><![CDATA[1361.000000]]></windowWidth>
     </SQLDocumentInfo>
     <AllowsIndexRenamingOnInsert><![CDATA[1]]></AllowsIndexRenamingOnInsert>
