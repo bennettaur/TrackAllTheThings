@@ -4,8 +4,8 @@
         <name><![CDATA[user-perms]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>821.00</x>
-            <y>37.00</y>
+            <x>969.00</x>
+            <y>70.00</y>
         </location>
         <size>
             <width>200.00</width>
@@ -48,8 +48,8 @@
         <name><![CDATA[task-properties]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1394.00</x>
-            <y>403.00</y>
+            <x>1542.00</x>
+            <y>436.00</y>
         </location>
         <size>
             <width>176.00</width>
@@ -95,8 +95,8 @@
         <name><![CDATA[Users]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>364.00</x>
-            <y>128.00</y>
+            <x>512.00</x>
+            <y>161.00</y>
         </location>
         <size>
             <width>157.00</width>
@@ -131,12 +131,12 @@
         <name><![CDATA[Project]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>347.00</x>
-            <y>342.00</y>
+            <x>435.00</x>
+            <y>372.00</y>
         </location>
         <size>
-            <width>202.00</width>
-            <height>100.00</height>
+            <width>215.00</width>
+            <height>120.00</height>
         </size>
         <zorder>2</zorder>
         <SQLField>
@@ -177,16 +177,70 @@
             <referencesTableUID><![CDATA[D4334FBD-37F1-44C3-B635-23C6C292E009]]></referencesTableUID>
             <uid><![CDATA[173C543D-9AFD-4F62-8869-3EFFF0279C24]]></uid>
         </SQLField>
+        <SQLField>
+            <name><![CDATA[life_cycle_state_id]]></name>
+            <type><![CDATA[INTEGER]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>Life Cycle</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[Life Cycle]]></referencesTable>
+            <sourceCardinality>0</sourceCardinality>
+            <destinationCardinality>0</destinationCardinality>
+            <referencesFieldUID><![CDATA[B5D215BB-C1B9-4347-8CA6-9F29A258926A]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[4E686D57-27AA-474A-9E10-E74AB1741701]]></referencesTableUID>
+            <temporaryOriginalName><![CDATA[life_cycle_start_id]]></temporaryOriginalName>
+            <uid><![CDATA[47898741-495D-4C1E-A525-81C3907F941B]]></uid>
+        </SQLField>
         <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[43B4FAA1-29F2-4553-B939-3437AA6CC6D1]]></uid>
     </SQLTable>
     <SQLTable>
+        <name><![CDATA[Life Cycle]]></name>
+        <schema><![CDATA[]]></schema>
+        <location>
+            <x>501.00</x>
+            <y>543.00</y>
+        </location>
+        <size>
+            <width>174.00</width>
+            <height>80.00</height>
+        </size>
+        <zorder>17</zorder>
+        <SQLField>
+            <name><![CDATA[id]]></name>
+            <type><![CDATA[INTEGER]]></type>
+            <primaryKey>1</primaryKey>
+            <forcedUnique><![CDATA[1]]></forcedUnique>
+            <uid><![CDATA[B5D215BB-C1B9-4347-8CA6-9F29A258926A]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[next]]></name>
+            <type><![CDATA[INTEGER]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>Life Cycle</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[Life Cycle]]></referencesTable>
+            <sourceCardinality>0</sourceCardinality>
+            <destinationCardinality>0</destinationCardinality>
+            <referencesFieldUID><![CDATA[B5D215BB-C1B9-4347-8CA6-9F29A258926A]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[4E686D57-27AA-474A-9E10-E74AB1741701]]></referencesTableUID>
+            <uid><![CDATA[0FB0ED1B-C910-4251-BBE0-BA817052C9AC]]></uid>
+        </SQLField>
+        <SQLField>
+            <name><![CDATA[name]]></name>
+            <type><![CDATA[VARCHAR(80)]]></type>
+            <uid><![CDATA[7B732051-A55D-4AD7-803E-6949DE25DFCC]]></uid>
+        </SQLField>
+        <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
+        <uid><![CDATA[4E686D57-27AA-474A-9E10-E74AB1741701]]></uid>
+    </SQLTable>
+    <SQLTable>
         <name><![CDATA[task-media]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1403.00</x>
-            <y>233.00</y>
+            <x>1551.00</x>
+            <y>266.00</y>
         </location>
         <size>
             <width>165.00</width>
@@ -228,8 +282,8 @@
         <name><![CDATA[Tasks]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1697.00</x>
-            <y>316.00</y>
+            <x>1845.00</x>
+            <y>349.00</y>
         </location>
         <size>
             <width>145.00</width>
@@ -269,8 +323,8 @@
         <name><![CDATA[ticket-media]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>938.00</x>
-            <y>234.00</y>
+            <x>1086.00</x>
+            <y>267.00</y>
         </location>
         <size>
             <width>165.00</width>
@@ -311,8 +365,8 @@
         <name><![CDATA[Permissions]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1129.00</x>
-            <y>30.00</y>
+            <x>1277.00</x>
+            <y>63.00</y>
         </location>
         <size>
             <width>200.00</width>
@@ -339,8 +393,8 @@
         <name><![CDATA[States]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>369.00</x>
-            <y>459.00</y>
+            <x>0.00</x>
+            <y>465.00</y>
         </location>
         <size>
             <width>150.00</width>
@@ -367,8 +421,8 @@
         <name><![CDATA[ticket_property_template]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>965.00</x>
-            <y>542.00</y>
+            <x>1113.00</x>
+            <y>575.00</y>
         </location>
         <size>
             <width>200.00</width>
@@ -409,8 +463,8 @@
         <name><![CDATA[ticket-properties]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>942.00</x>
-            <y>397.00</y>
+            <x>1090.00</x>
+            <y>430.00</y>
         </location>
         <size>
             <width>176.00</width>
@@ -456,12 +510,12 @@
         <name><![CDATA[Tickets]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>645.00</x>
-            <y>318.00</y>
+            <x>793.00</x>
+            <y>351.00</y>
         </location>
         <size>
             <width>187.00</width>
-            <height>80.00</height>
+            <height>100.00</height>
         </size>
         <zorder>7</zorder>
         <SQLField>
@@ -491,6 +545,19 @@
             <uid><![CDATA[1BCB9904-1954-4FF7-B0DB-F18D1B240AE1]]></uid>
             <unique><![CDATA[1]]></unique>
         </SQLField>
+        <SQLField>
+            <name><![CDATA[life_cycle_state_id]]></name>
+            <type><![CDATA[INTEGER]]></type>
+            <referencesField>id</referencesField>
+            <referencesTable>Life Cycle</referencesTable>
+            <referencesField><![CDATA[id]]></referencesField>
+            <referencesTable><![CDATA[Life Cycle]]></referencesTable>
+            <sourceCardinality>0</sourceCardinality>
+            <destinationCardinality>0</destinationCardinality>
+            <referencesFieldUID><![CDATA[B5D215BB-C1B9-4347-8CA6-9F29A258926A]]></referencesFieldUID>
+            <referencesTableUID><![CDATA[4E686D57-27AA-474A-9E10-E74AB1741701]]></referencesTableUID>
+            <uid><![CDATA[2850F855-BFB9-4EC5-AD2E-08D7BBAE8863]]></uid>
+        </SQLField>
         <labelWindowIndex><![CDATA[0]]></labelWindowIndex>
         <ui.treeExpanded><![CDATA[1]]></ui.treeExpanded>
         <uid><![CDATA[CA124919-9E6F-4ABD-AB85-E2DB2B0050D1]]></uid>
@@ -499,8 +566,8 @@
         <name><![CDATA[Ticket Workflow]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>56.00</x>
-            <y>400.00</y>
+            <x>204.00</x>
+            <y>433.00</y>
         </location>
         <size>
             <width>187.00</width>
@@ -548,8 +615,8 @@
         <name><![CDATA[media]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1176.00</x>
-            <y>233.00</y>
+            <x>1324.00</x>
+            <y>266.00</y>
         </location>
         <size>
             <width>158.00</width>
@@ -575,8 +642,8 @@
         <name><![CDATA[task_property_template]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>962.00</x>
-            <y>674.00</y>
+            <x>1110.00</x>
+            <y>707.00</y>
         </location>
         <size>
             <width>200.00</width>
@@ -617,8 +684,8 @@
         <name><![CDATA[Properties]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>1191.00</x>
-            <y>399.00</y>
+            <x>1339.00</x>
+            <y>432.00</y>
         </location>
         <size>
             <width>155.00</width>
@@ -649,8 +716,8 @@
         <name><![CDATA[user-project]]></name>
         <schema><![CDATA[]]></schema>
         <location>
-            <x>601.00</x>
-            <y>163.00</y>
+            <x>749.00</x>
+            <y>196.00</y>
         </location>
         <size>
             <width>168.00</width>
@@ -839,7 +906,7 @@ b21NYXJnaW6GkoSjnqiiNIaShJmZD05TU2NhbGluZ0ZhY3RvcoaShKOeqKIBhpKE
 mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
 ]]></encodedPrintInfo>
         <autoSizeTablesOption><![CDATA[0]]></autoSizeTablesOption>
-        <documentScaleFactor><![CDATA[0.742]]></documentScaleFactor>
+        <documentScaleFactor><![CDATA[0.902]]></documentScaleFactor>
         <exportDialect><![CDATA[generic]]></exportDialect>
         <fileversion><![CDATA[3.1]]></fileversion>
         <generator><![CDATA[com.malcolmhardie.sqleditor]]></generator>
@@ -855,7 +922,7 @@ mZkLTlNQYXBlck5hbWWGkoSZmQluYS1sZXR0ZXKGhoY=
         <windowHeight><![CDATA[784.000000]]></windowHeight>
         <windowLocationX><![CDATA[38.000000]]></windowLocationX>
         <windowLocationY><![CDATA[70.000000]]></windowLocationY>
-        <windowScrollOrigin><![CDATA[{332, 2}]]></windowScrollOrigin>
+        <windowScrollOrigin><![CDATA[{0, 54}]]></windowScrollOrigin>
         <windowWidth><![CDATA[1361.000000]]></windowWidth>
     </SQLDocumentInfo>
     <AllowsIndexRenamingOnInsert><![CDATA[1]]></AllowsIndexRenamingOnInsert>
